@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: greenyellow;
+}
+.container{
+    width: 500px;
+    height: 320px;
+    border: 2px solid lightgray;
+    box-shadow: 2px 2px 16px 0px white, -2px -2px 16px 0px lightgray;
+    margin: 5em auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3em;
+    align-items: flex-end;
+    border-radius: 70px;
+    animation: jagtech 4s 2 alternate 4s;
+}
+@keyframes jagtech {
+    0%{
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 16px 0px lightgray, -2px -2px 16px 0px lightgray;
+    
+    }
+    50%{
+        // border: 1px solid rgb(255, 83, 83);
+        // box-shadow: 2px 2px 16px 0px rgb(251, 162, 162), -2px -2px 16px 0px rgb(251, 162, 162);
+
+    }
+    100%{
+        // border: 1px solid rgb(41, 41, 240);
+        // box-shadow: 2px 2px 16px 0px rgb(190, 190, 247), -2px -2px 16px 0px rgb(190, 190, 247);
+    }
+}   
+.first-ball, .second-ball, .third-ball{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+.first-ball{
+    animation: one 1s infinite alternate 1s;
+}
+@keyframes one {
+    from{
+        transform: translateY(0px) ;
+    }
+    to{
+        transform: translateY(-250px);
+    }
+}
+.second-ball{
+    animation: two 1s infinite alternate 2s;
+}
+@keyframes two {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-250px);
+    }
+}
+.third-ball{
+    animation: three 1s infinite alternate 2.5s;
+}
+@keyframes three {
+    from{
+        transform: translateY(0px) ;
+    }
+    to{
+        transform: translateY(-250px);
+    }
+}
